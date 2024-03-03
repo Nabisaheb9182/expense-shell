@@ -21,4 +21,4 @@ mysql -h mysql-dev.nadevops.onlinee -uroot -pExpenseApp@1 < /app/schema/backend.
 
 systemctl daemon-reload
 systemctl enable backend
-systemctl start backend
+systemctl restart backend
