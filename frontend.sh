@@ -12,7 +12,7 @@ curl -o /tmp/frontend.zip https://expense-artifacts.s3.amazonaws.com/frontend.zi
 
 echo -e "\e[32m Extract Downloaded Application Content \e[0m"
 cd /usr/share/nginx/html &>>/tmp/expense.log
-unzip /tmp/frontend.zip
+unzip /tmp/frontend.zip &>>/tmp/expense.log
 
 echo -e "\e[32m Starting Nginx Service \e[0m"
 systemctl enable nginx &>>/tmp/expense.log
